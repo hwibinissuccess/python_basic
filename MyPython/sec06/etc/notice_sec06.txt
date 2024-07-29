@@ -1,0 +1,41 @@
+1) import 모듈
+    ex) import Mycalc
+
+2) import 모듈 as 별칭
+    ex) import Mycalc as mc
+
+3) from 모듈 import 클래스
+  ex) from  Mycalc import Calc
+
+4) from 모듈 imort 클래스 as 별칭
+  ex) from  Mycalc import Calc  as  cl
+
+5) from 모듈 import  *
+  ex) from  Mycalc import   *
+
+========================================================================================
+from inspect import  *   : 코드 분석, 디버깅, 동적코드 조작등
+                         - inspect.signature(function) = python 3.0 추가  : 메소드 매개인자, 반환정보등
+
+======================================================================================
+- 오버로딩 (Overloading) : 동일한 이름의 함수나 메소드를 여러개 정의하고  매개변수의 개수나 타입을 다르게 정의하는 동작하는 것
+      -  python은 기본값을 가진 매개변수와 가변값 [  def test(a=0, b=0,*agrs, ** kwargs):pass; ] 으로 사용 한다.
+
+- 오버라이딩(Overriding) : 상속관계에서 자식 클래스가 선조의 클래스의 메소드를 재정의 (덮어쓰기) 하는 것
+        - 자식클래스에서 부모클래스의 메소드와 동일한 이름, 동일한 매개변수를 갖는 메소드를 정의하면
+          자식클래스의 인스턴스는 부모클래스의 메소드 대신 자식클래스의 메소드를 호출하게 된다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

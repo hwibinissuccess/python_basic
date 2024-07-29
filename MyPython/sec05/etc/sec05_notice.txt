@@ -1,0 +1,48 @@
+ 1) 변수 영역 :  함수의 영역 (LEGB)로 변수를 구분하는 영역 , 변수의 유효범위와 충돌방지
+   -Local(지역) : 함수 내부에 선언된 변수 , 함수 내에서만 접근이 가능
+   -Enclosing(비지역, 중첩) : 중첩함수의 경우 내부 함수가 , 외부함수의 변수에 접근이 가능
+   -Global(전역) : 함수 외부에 선언된 변수 , 모듈(py) 안에 모든 함수가 접근 가능하다.
+   -Built-in(내장) : 재정의 할수 없는 고정 함수로 python 언어 자체에 내장된 변수와 함수
+   * 만일 LEGB 영역에 없으면 "NameError"가 발생된다.  a_function.py
+
+ 2) 속성 : 내장 모듈의 특수 속성
+ '__name__'  : 현재 모듈의 이름을 나타내는 속성, 직접실행되는 경우  __main__으로 설정된다.
+            ex) if __name__ == '__main__':
+               직접 실행한 현재 모듈인지, 임포트한 모듈인지를 확인할 수 있다.
+
+ '__doc__' : 모듈, 클래스(속성+ 메소드), 함수등 Document String 을 나타내는 속성,  ''' , """
+            -> help()를 통해서 확인
+
+ '__spec__' : python 3.3 도입, 모듈의 import 스펙 저장 , 모듈의 로드와 실행의 정보를 포함
+             ->'importlib' 모듈과 함께 사용할수 있다.
+             모듈의 로딩 및 실행, 실행의 동작을 제어하고 추가하는 메타정보 기능
+     ex) >>> import importlib.metadata  : 모듈의 메타정보, 동적으로 모듈을 제어하면서 로드할 때 __spec__ 속성을 설정
+        >>> dir(importlib.metadata)
+
+
+3) 자유 변수(Free Variable)  page.
+     -  def add(a):
+            return a+b+c    # b,c 는 자유변수 (함수내에서 참조는 되지만, 함수내에서 정의 되지 않은 변수)
+
+     -  def outer():
+            x=10
+            def inner():  ----->inner함수가 x 자유변수를 기억하는 클로저 , outer 함수가 호출된 뒤에도 자유변수 기억!!!
+               return x
+            return inner
+
+exaM  01)f_lambda.py -> 함수로 만들 자
+      02) g_labmda.py  -> 함수로 만들자
+
+4) 고차함수  : 함수의 매개인자를 함수로 받거나 함수로 리턴하는 원형을 가진 함수
+         람다, 추상적인 기술로 리턴하는 로직을 사용할 때
+
+  -map(func, *iterables) --> map object  : 매개인자로 받은 시퀀스객체를 함수를 통해 새로운 시퀀스로 리턴
+  -filter(function or None(필터링한 조건함수), iterable) --> filter object:  : 매개인자로 받은 시퀀스객체를 함수의 조건 결과  리턴
+ - reduce(function(누적값의 계산결과 리턴함수) , iterable[, initial]) -> value : 왼쪽에서 오른쪽 순차 시퀀스 데이터를 함수를 통해 단일 값으로 리턴
+
+
+
+
+
+
+

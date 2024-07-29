@@ -1,0 +1,13 @@
+a=list(range(8))     # 0~7    range(stop-1)
+b= list(range(2,8))   # 2~7   range(start, stop-1)
+c= list(range(10,201,20))     # range(start,stop-1,step )
+print(a)
+print(b)
+print(c)
+
+a=tuple(range(8))     # 0~7    range(stop-1)
+b= tuple(range(2,8))   # 2~7   range(start, stop-1)
+c= tuple(range(10,201,20))     # range(start,stop-1,step )
+print(a)
+print(b)
+print(c)
