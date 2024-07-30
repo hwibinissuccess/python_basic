@@ -1,0 +1,12 @@
+예외 발생 
+Traceback (most recent call last):
+  File "C:\PythonWork\python_basic\MyPython\sec09\exam\i_exam.py", line 6, in <module>
+    raise ValueError("잘못된 값입니다.")
+ValueError: 잘못된 값입니다.
+
+예외 발생 
+Traceback (most recent call last):
+  File "C:\PythonWork\python_basic\MyPython\sec09\exam\i_exam.py", line 6, in <module>
+    raise ValueError("잘못된 값입니다.")
+ValueError: 잘못된 값입니다.
+

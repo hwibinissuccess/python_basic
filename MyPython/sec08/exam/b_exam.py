@@ -9,3 +9,7 @@ def my_openner(path, flags): #파일 경로와 플래그를 인수로 잡은 사
 
 with open('data03.txt', 'w', encoding='utf-8',opener=my_openner) as file:
     file.write("사용자 정의 함수 핸들링")
+
+
+f = open('data03.txt', 'w', encoding='utf-8',opener=my_openner) # 내장 open 함수ㅋ
+print(type(f))

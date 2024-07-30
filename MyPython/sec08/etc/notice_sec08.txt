@@ -12,3 +12,7 @@ with 키워드
   -> try-except –finally 구문을 전체 사용하지 않아도 된다.
  - 가독성 향상
  - 컨텍스트 관리자 만들기 : userClass로 __enter__ / __exit__를 재정의 한 메소드를 함께 사용할 수 있다.
+
+os(file, mode = 'r',
+    buffereing
+)
