@@ -9,7 +9,7 @@ def tset01():
 
 def test02():
     # 검색할 디렉토리 경로
-    dir = r'C:/PythonWork/python_basic' # r = raw String의 약자
+    dir = r'/'  # r = raw String의 약자
     print(dir)
     res = glob.glob(os.path.join(dir, '**','*.py'), recursive=True)
 
