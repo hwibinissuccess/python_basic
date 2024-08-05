@@ -1,0 +1,32 @@
+주요 모듈 요약
+1) xml.etree.ElementTree : 표준 라이브러리로 XML 문서를 파싱하고 조작 사용이 간편함
+    parse(source): XML 문서를 파싱하여 ElementTree 객체 생성
+    fromstring(text): 문자열에서 XML 데이터를 파싱하여 Element 객체 생성
+    find(path): 주어진 경로에 일치하는 첫 번째 하위 요소 반환
+    findall(path): 주어진 경로에 일치하는 모든 하위 요소 반환
+    findtext(path): 주어진 경로에 일치하는 첫 번째 하위 요소의 텍스트 반환
+    write(file): XML 데이터를 파일에 저장
+
+2) lxml : 외부 라이브러리로 더 강력하고 성능이 우수하며 HTML 문서도 처리 가능함
+    etree.parse(source): XML 문서를 파싱하여 ElementTree 객체 생성
+    etree.fromstring(text): 문자열에서 XML 데이터를 파싱하여 Element 객체 생성
+    etree.tostring(element): Element 객체를 문자열로 변환
+    element.xpath(query): XPath 표현식을 사용하여 요소 검색
+    element.find(path): 주어진 경로에 일치하는 첫 번째 하위 요소 반환
+    element.findall(path): 주어진 경로에 일치하는 모든 하위 요소 반환
+
+3) xml.dom.minidom :표준 라이브러리로  DOM 객체 모델 제공하며, XML 문서를 파싱하고 조작하는 데 사용
+    parse(filename): 파일에서 XML 문서를 파싱하여 DOM 객체 생성
+    parseString(string): 문자열에서 XML 데이터를 파싱하여 DOM 객체 생성
+    getElementsByTagName(name): 주어진 태그 이름을 가진 모든 요소 반환
+    getAttribute(name): 요소의 주어진 속성 값 반환
+    setAttribute(name, value): 요소의 주어진 속성 값 설정
+    toxml(): XML 문서 전체를 문자열로 반환
+
+4) xml.sax : 표준 라이브러리로  이벤트 기반 파서 및 메모리를 효율적으로 사용함
+    make_parser(): SAX 파서 객체 생성
+    parse(source, handler): XML 문서를 파싱하고 이벤트 핸들러에 전달
+    ContentHandler.startElement(name, attrs): XML 요소의 시작을 처리
+    ContentHandler.endElement(name): XML 요소의 끝을 처리
+    ContentHandler.characters(content): XML 요소의 텍스트 데이터를 처리
+    ErrorHandler.error(exception): 오류 이벤트 처리

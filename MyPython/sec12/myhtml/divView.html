@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>범위 태그</title>
+    <style>
+        .red {
+            color: red;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .blue {
+            background-color: #0099FF;
+        }
+        .yellow {
+            background-color: #FFFF00;
+        }
+        .green {
+            background-color: #33CC33;
+        }
+    </style>
+</head>
+
+<body style="margin-left: 50px; margin-right: 50px;">
+    <div>
+        <fieldset>
+            <legend>&lt; div &gt;</legend>
+            <pre>
+                HTML 범위태그는 작성코드를 그대로 보여주는
+                <span class="red"><b>&lt; pre &gt;</b></span>
+                등이 있습니다
+            </pre>
+            <pre>
+                HTML 범위태그는 작성코드를 그대로 보여주는 <b>&lt; pre &gt;</b> 등이 있습니다
+            </pre>
+        </fieldset>
+    </div>
+
+    <fieldset>
+        <legend>&lt; span &gt;</legend>
+        <span class="blue">파란색</span>와 <span class="yellow">노란색</span>를 혼합하면
+        <span class="green">녹색</span>입니다.
+    </fieldset>
+
+    <div>
+        <fieldset>
+            <legend>&lt; pre &gt;</legend>
+            <pre><code>
+                <span class="red">function Panel (element, canClose, closeHandler) {</span>
+                this.element = element;
+                this.canClose = canClose;
+                <span class="red">this.closeHandler = function () {</span>
+                if (closeHandler) closeHandler()
+                <span class="red">};</span>
+                <span class="red">}</span>
+            </code></pre>
+        </fieldset>
+    </div>
+</body>
+</html>

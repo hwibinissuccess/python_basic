@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 주요 태그 예제</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        code {
+            display: block;
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 주요 태그 예제</h1>
+
+    <section>
+        <h2>구조적 요소</h2>
+        <h3>&lt;header&gt;</h3>
+        <p>문서나 섹션의 머리말을 정의. 보통 로고, 제목, 네비게이션 메뉴가 포함.</p>
+        <code>
+&lt;header&gt;<br>
+    &lt;h1&gt;Website Title&lt;/h1&gt;<br>
+    &lt;nav&gt;<br>
+        &lt;ul&gt;<br>
+            &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+        &lt;/ul&gt;<br>
+    &lt;/nav&gt;<br>
+&lt;/header&gt;
+        </code>
+
+        <h3>&lt;nav&gt;</h3>
+        <p>네비게이션 링크를 정의. 웹사이트 내의 다른 페이지로 이동하는 링크 모음에 사용.</p>
+        <code>
+&lt;nav&gt;<br>
+    &lt;ul&gt;<br>
+        &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+        &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+        &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;<br>
+        &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+    &lt;/ul&gt;<br>
+&lt;/nav&gt;
+        </code>
+
+        <h3>&lt;section&gt;</h3>
+        <p>문서의 독립적인 섹션을 정의. 일반적으로 제목이 있는 콘텐츠의 그룹을 나타냅.</p>
+        <code>
+&lt;section&gt;<br>
+    &lt;h2&gt;About Us&lt;/h2&gt;<br>
+    &lt;p&gt;We are a company that values excellence...&lt;/p&gt;<br>
+&lt;/section&gt;
+        </code>
+
+        <h3>&lt;article&gt;</h3>
+        <p>독립적으로 구분할 수 있는 콘텐츠를 정의. 블로그 게시물, 뉴스 기사 등에 사용.</p>
+        <code>
+&lt;article&gt;<br>
+    &lt;h2&gt;Blog Post Title&lt;/h2&gt;<br>
+    &lt;p&gt;This is a blog post about HTML5...&lt;/p&gt;<br>
+&lt;/article&gt;
+        </code>
+
+        <h3>&lt;aside&gt;</h3>
+        <p>주 콘텐츠와 별도로 연관된 콘텐츠를 정의. 사이드바나 보충 설명 등에 사용.</p>
+        <code>
+&lt;aside&gt;<br>
+    &lt;h3&gt;Related Articles&lt;/h3&gt;<br>
+    &lt;ul&gt;<br>
+        &lt;li&gt;&lt;a href="#article1"&gt;Article 1&lt;/a&gt;&lt;/li&gt;<br>
+        &lt;li&gt;&lt;a href="#article2"&gt;Article 2&lt;/a&gt;&lt;/li&gt;<br>
+    &lt;/ul&gt;<br>
+&lt;/aside&gt;
+        </code>
+
+        <h3>&lt;footer&gt;</h3>
+        <p>문서나 섹션의 바닥글을 정의. 보통 저작권 정보, 연락처, 이용 약관 등이 포함.</p>
+        <code>
+&lt;footer&gt;<br>
+    &lt;p&gt;&copy; 2024 Your Company. All rights reserved.&lt;/p&gt;<br>
+&lt;/footer&gt;
+        </code>
+    </section>
+
+    <section>
+        <h2>멀티미디어 요소</h2>
+
+        <h3>&lt;audio&gt;</h3>
+        <p>오디오 콘텐츠를 정의. 여러 소스와 컨트롤 옵션을 포함한다.</p>
+        <code>
+&lt;audio controls&gt;<br>
+    &lt;source src="audio-file.mp3" type="audio/mpeg"&gt;<br>
+    Your browser does not support the audio element.<br>
+&lt;/audio&gt;
+        </code>
+
+        <h3>&lt;video&gt;</h3>
+        <p>비디오 콘텐츠를 정의.</p>
+        <code>
+&lt;video width="320" height="240" controls&gt;<br>
+    &lt;source src="video-file.mp4" type="video/mp4"&gt;<br>
+    Your browser does not support the video tag.<br>
+&lt;/video&gt;
+        </code>
+
+        <h3>&lt;figure&gt;</h3>
+        <p>자립형 콘텐츠를 정의. 이미지, 일러스트레이션, 다이어그램 등과 함께 사용됨.</p>
+        <code>
+&lt;figure&gt;<br>
+    &lt;img src="image.jpg" alt="A description of the image"&gt;<br>
+    &lt;figcaption&gt;Image Caption&lt;/figcaption&gt;<br>
+&lt;/figure&gt;
+        </code>
+    </section>
+
+    <section>
+        <h2>입력 및 폼 요소</h2>
+
+        <h3>&lt;input&gt;</h3>
+        <p>다양한 유형의 입력 필드를 정의</p>
+        <code>
+&lt;input type="text" name="username" placeholder="Enter your username"&gt;<br>
+&lt;input type="email" name="email" placeholder="Enter your email"&gt;<br>
+&lt;input type="date" name="birthday"&gt;
+        </code>
+
+        <h3>&lt;datalist&gt;</h3>
+        <p>입력 필드의 자동 완성 옵션을 정의.</p>
+        <code>
+&lt;input list="browsers" name="browser"&gt;<br>
+&lt;datalist id="browsers"&gt;<br>
+    &lt;option value="Chrome"&gt;<br>
+    &lt;option value="Firefox"&gt;<br>
+    &lt;option value="Safari"&gt;<br>
+    &lt;option value="Edge"&gt;<br>
+&lt;/datalist&gt;
+        </code>
+
+        <h3>&lt;output&gt;</h3>
+        <p>계산 결과나 사용자 입력의 결과를 나타냄.</p>
+        <code>
+&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;<br>
+    &lt;input type="range" id="a" value="50"&gt; +<br>
+    &lt;input type="number" id="b" value="50"&gt;<br>
+    &lt;output name="result" for="a b"&gt;100&lt;/output&gt;<br>
+&lt;/form&gt;
+        </code>
+    </section>
+
+    <section>
+        <h2>기타 요소</h2>
+
+        <h3>&lt;mark&gt;</h3>
+        <p>중요한 부분을 강조.</p>
+        <code>
+&lt;p&gt;This is an &lt;mark&gt;important&lt;/mark&gt; message.&lt;/p&gt;
+        </code>
+
+        <h3>&lt;time&gt;</h3>
+        <p>시간을 정의.</p>
+        <code>
+&lt;time datetime="2024-08-02T14:00"&gt;2nd August 2024, 2:00 PM&lt;/time&gt;
+        </code>
+
+        <h3>&lt;progress&gt;</h3>
+        <p>작업의 진행 상태를 나타냄.</p>
+        <code>
+&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;
+        </code>
+    </section>
+</body>
+</html>
